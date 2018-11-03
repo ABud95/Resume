@@ -1,0 +1,63 @@
+public void listFilesForFolder(final File folder) {
+    for (final File fileEntry : folder.listFiles()) {
+    //for loop with bounds
+        if (fileEntry.isDirectory()) {
+            listFilesForFolder(fileEntry);
+            //checks for
+        } else {
+            System.out.println(fileEntry.getName());
+        }
+    }
+}
+
+final File folder = new File("/home/you/Desktop");
+listFilesForFolder(folder);
+
+/*The file path is called path, a try block is used, bool is used to determine is the directory is actually a directory, it writes 
+to the C: directory, prints to console with bool and directory, error coding can be done to for more drive letters, additionally gui or
+prompt for directory, also storing what is in the directory in an array as a strin
+package com.tutorialspoint;
+
+import java.io.File;
+
+public class FileDemo {
+   public static void main(String[] args) {      
+      File f = null;
+      String path;
+      boolean bool = false;
+      
+      try {
+         // create new file
+         f = new File("c:");
+            
+         // true if the file path is directory, else false
+         bool = f.isDirectory();
+         
+         // get the path
+         path = f.getPath();
+         
+         // prints
+         System.out.println(path+" is directory? "+ bool);
+               
+         // create new file
+         f = new File("c:/test.txt");
+         
+         // true if the file path is directory, else false
+         bool = f.isDirectory();
+         
+         // get the path
+         path = f.getPath();
+         
+         // prints
+         System.out.print(path+" is directory? "+bool);
+         
+      } catch(Exception e) {
+         // if any error occurs
+         e.printStackTrace();
+      }
+   }
+}
+//results
+//c: is directory? false
+//c:\test.txt is directory? false
+*/
