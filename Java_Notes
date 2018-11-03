@@ -1,0 +1,114 @@
+public class Main {                           (Class called main that is public)
+    public static void main(String[] args) {  (Public so anyone can see it, static means cannot create instance of main, void means it doesn't return a value, main is name)
+        System.out.println("Hello, World!");  (system is pre-defined class, out is stdout, println is a method that can be used to print a line) 
+    }
+}
+
+examples of classes
+
+java.lang (system string object, thread, exception)
+java.util (utility service calsses)
+java.io (file input/output, includes keyboard input)
+java.net
+java.applet
+java.awt (gui)
+java.awt.event (gui)
+java.sql (note learn sql)
+
+type of variables
+byte, short, int, long (float number)
+float (float number)
+char (character)
+boolean (t or f)
+
+int myNumber;
+myNumber = 5;
+
+int a = 4;
+
+if (a == 4) {
+    System.out.println("Ohhh! So a is 4!");
+}
+
+if (a == b) {
+    // We already know this part
+} else {
+    // a and b are not equal... :/
+}
+
+int intArray[];    //declaring array
+intArray = new int[20];  // allocating memory to array
+
+int[] intArray = new int[20]; // combining both statements in one
+
+boolean operators
+int a = 4;
+int b = 5;
+boolean result;
+result = a < b; // true
+result = a > b; // false
+result = a <= 4; // a smaller or equal to 4 - true
+result = b >= 6; // b bigger or equal to 6 - false
+result = a == b; // a equal to b - false
+result = a != b; // a is not equal to b - true
+result = a > b || a < b; // Logical or - true
+result = 3 < a && a < 6; // Logical and - true
+result = !result; // Logical not - false
+
+for (int i = 0; i < 3; i++) {}
+
+while (condition) {}
+
+
+
+public void bar(int num1, int num2) {
+    ...
+}
+
+int a = 3;
+int b = 5;
+bar(a, b);
+
+int num1 = a;
+int num2 = b;
+
+
+
+public class Student {
+    private String name;
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+
+
+
+
+Everything in Java is within classes and objects.
+
+
+
+Core java is the basic foundation for Java. You can find the below topics covered as part of core Java.
+ Although all topics are essentials to have complete grip on Java but in real time you may not need all of them.
+The major topics are listed below:
+
+1. Java Basics - Variables, Data types, Operators, Control Statements,Strings, Arrays and Functions.
+
+2. Object Oriented Concepts - Classes, Objects, Constructors, Inheritance, Abstraction , 
+Abstract classes, Interfaces, Polymorphism, Function overloading, Function overriding.
+
+3. Java Strings - Java String class, different string methods present and interfaces 
+implemented in this class.
+
+3. Java collections - Collections, Threads, queue, sets, XML file operations, .
+
+You can go check out the entire Java blog Series here. I hope you will find these 
+pretty interesting and informative.
+
+Also, there is a lot of free content available on YouTube which you can browse around to 
+learn Java. You can go through this tutorial video on Java which will help you get started on the same.
+
