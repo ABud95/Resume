@@ -1,0 +1,44 @@
+import java.util.Calendar;
+import java.util.Locale;
+import java.util.Scanner; 
+import java.util.Date;
+import java.text.DecimalFormat;
+import java.lang.Object;
+import java.lang.System;
+
+
+public class Main
+{
+public static void main(String[] args)
+{
+   //define variables
+   double circumference = 0;
+   double area = 0;
+   double volume = 0;
+   double surfacearea = 0;
+   double radius = 0;
+   Scanner scan = new Scanner (System.in);
+   DecimalFormat dFmt = new DecimalFormat("0.0000");
+
+   //prompt for radius
+   System.out.println("Enter the sphere's radius: ");
+   radius = scan.nextDouble();
+
+   //calculate values
+   circumference = 2 * Math.PI * radius;
+   area = Math.PI * (Math.pow(radius, 2));
+   volume = ((4 / 3) * Math.PI) * Math.pow(radius, 3);
+   surfacearea = (4 * Math.PI) * Math.pow(radius, 2);
+
+   //Display values with println and DecimalFormat
+   System.out.println("Using Println");
+   System.out.println("The radius: " + radius);
+   System.out.println("Circumference: " + dFmt.format(circumference));
+   System.out.println("Area: " + dFmt.format(area));
+   System.out.println("Volume: " + dFmt.format(volume));
+   System.out.println("Surface Area: " + dFmt.format(surfacearea));
+
+   //Display values with format method
+   System.out.printf("This is a radius: %f%n, %f, %f, %f, %f",radius, circumference,area,volume,surfacearea);
+}
+}
